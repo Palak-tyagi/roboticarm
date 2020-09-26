@@ -35,29 +35,29 @@ void loop() {   //servo1
   Serial.print(potValue);
   Serial.print("   Degrees: ");
   Serial.println(val1);
-  delay(69);                           // waits for the servo to get there
+  delay(70);                           // waits for the servo to get there
 
 //servo2
   val2 = analogRead(potpin2);            
   val2 = map(val2, 0, 1023, 0, 180);     
   myservo2.write(val2);                  
-  delay(69); 
+  delay(70); 
                             
 //servo3
   val3 = analogRead(potpin3);            
   val3= map(val3, 0, 1023, 0, 180);     
   myservo3.write(val3);                  
-  delay(69);
+  delay(70);
                              
 //servo4
   val4 = analogRead(potpin4);            
   val4 = map(val4, 0, 1023, 0, 180);     
   myservo4.write(val4);                  
-  delay(69);
+  delay(70);
 
 //servo5
   val5 = analogRead(potpin5);            
   val5 = map(val5, 0, 1023, 0, 180);     
   myservo5.write(val5);                  
-  delay(69);                                    
+  delay(70);                                    
 }
